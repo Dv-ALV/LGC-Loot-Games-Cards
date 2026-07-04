@@ -1,0 +1,449 @@
+* { margin: 0;
+    box-sizing: border-box;
+}
+ 
+header {
+    background-color: white;
+    height: 210px;
+    overflow: hidden;
+}
+ 
+ul {
+    list-style: none;
+}
+.logo {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    top: -30px;
+    left: 100px;
+}
+ 
+.quadradoazul{
+    width: 120px;
+    height: 43px;
+    background-color: #00357a;
+    border-top-left-radius : 46px;
+    border-bottom-left-radius: 46px;    
+    position: relative;
+    top: -195px;
+    left: 480px;
+ 
+}
+ 
+.textodoinput{
+    position: relative;
+    top: -238px;
+    left: 590px;
+    width: 350px;
+    height: 43px;
+    border-top-right-radius: 46px;
+    border-bottom-right-radius: 46px;
+}
+ 
+ 
+.usuario{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -320px;
+    left: 1640px;
+}   
+ 
+.barraazul{
+    width: 3px;
+    height: 70px;
+    background-color: #00357a;
+    position: absolute;
+    top: 40px;
+    left: 1750px;   
+}
+ 
+.carrinho{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: -375px;
+    left: 1733px;
+}
+ 
+.buton {
+        background-color: white;
+        border: white;
+}
+ 
+.buton>img{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 68px;
+    left: 940px;
+}
+ 
+.lista>li>a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 23px;
+}
+ 
+.lista > li > a.aura{
+    color: #00357a;
+}
+ 
+.lista>li>a:hover{
+    color: #00357a;
+}
+ 
+.lista > li:nth-child(3),
+.lista > li:nth-child(4),
+.lista > li:nth-child(5),
+.lista > li:nth-child(6) {
+    display: inline-block;
+    position: relative;
+    top: -265px;
+}
+ 
+.lista > li:nth-child(3){ 
+    left: 1000px; 
+}
+.lista > li:nth-child(4){ 
+    left: 1060px; 
+}
+.lista > li:nth-child(5){ 
+    left: 1120px; 
+}
+.lista > li:nth-child(6){ 
+    left: 1180px; 
+}
+ 
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;   
+    left: 0;
+    background: white;
+    box-shadow: 0 4px 6px #00265779;
+    padding: 10px;
+    min-width: 180px;
+    z-index: 10;
+}
+ 
+.dropdown li {
+    display: block;
+    margin-bottom: 15px;
+}
+ 
+.lista > li:nth-child(6):hover .dropdown {
+    display: block;
+}
+ 
+.ligapokemon{
+    text-decoration: none;
+    color: #ffd230
+}
+ 
+.ligaonepiece{
+    text-decoration: none;
+    color: #f9943b
+}
+ 
+ 
+
+ 
+.conteudologin {
+    display: grid;
+    justify-items: center;
+    gap: 50px;
+    padding: 60px 60px 110px;
+}
+ 
+.logogrande {
+    display: grid;
+    justify-items: center;
+}
+ 
+.imglogogrande {
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
+}
+ 
+.caixaconta {
+    display: grid;
+    grid-template-columns: 420px 480px;
+    position: relative;
+}
+ 
+.tabinput {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+ 
+.ladoesquerdo {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    border: 2px solid #000;
+    border-right: none;
+    transition: grid-template-rows 0.5s ease;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo {
+    grid-template-rows: 1fr 2fr;
+}
+ 
+.abalogin,
+.abacriar {
+    display: grid;
+    align-content: center;
+    gap: 12px;
+    padding: 30px 35px;
+    cursor: pointer;
+    background-color: #d9d9d9;
+    overflow: hidden;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+}
+ 
+.abalogin {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+}
+ 
+.abalogin h2,
+.abacriar h2 {
+    font-family: Arial, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #f9943b;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+ 
+.abalogin h2 {
+    color: #ffd230;
+}
+ 
+.textologin,
+.textocriar {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #f9943b;
+    max-height: 200px;
+    opacity: 1;
+    transition: opacity 0.4s ease 0.1s, max-height 0.4s ease;
+}
+ 
+.abacriar .textocriar {
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease, max-height 0.4s ease;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abalogin {
+    background-color: #d9d9d9;
+    border-bottom-color: transparent;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abalogin h2 {
+    color: #f9943b;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abalogin .textologin {
+    max-height: 0;
+    opacity: 0;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abacriar {
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abacriar h2 {
+    color: #ffd230;
+}
+ 
+#tabcriar:checked ~ .ladoesquerdo .abacriar .textocriar {
+    max-height: 200px;
+    opacity: 1;
+    transition: opacity 0.4s ease 0.1s, max-height 0.4s ease;
+}
+ 
+.ladodireito {
+    display: grid;
+    background-color: #00357a;
+    padding: 45px 50px;
+}
+ 
+.formlogin,
+.formcriar {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    align-content: center;
+    gap: 22px;
+    transition: opacity 0.45s ease, transform 0.45s ease;
+}
+ 
+.formcriar {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(25px);
+}
+ 
+#tabcriar:checked ~ .ladodireito .formlogin {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-25px);
+}
+ 
+#tabcriar:checked ~ .ladodireito .formcriar {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+ 
+.campoconta {
+    display: grid;
+    gap: 8px;
+}
+ 
+.campoconta label {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffd230;
+    text-transform: uppercase;
+}
+ 
+.inputconta {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ffd230;
+    padding: 6px 2px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #ffd230;
+}
+ 
+.inputconta::placeholder {
+    color: #ffd23099;
+}
+ 
+.botaoconta {
+    justify-self: start;
+    margin-top: 10px;
+    padding: 12px 45px;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffd230;
+    color: #00357a;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+ 
+.botaoconta:hover {
+    transform: scale(1.05);
+}
+ 
+#tablogin:focus-visible ~ .ladoesquerdo .abalogin,
+#tabcriar:focus-visible ~ .ladoesquerdo .abacriar {
+    outline: 3px solid #00357a;
+    outline-offset: -6px;
+}
+ 
+@media (prefers-reduced-motion: reduce) {
+    .ladoesquerdo,
+    .abalogin,
+    .abacriar,
+    .abalogin h2,
+    .abacriar h2,
+    .textologin,
+    .textocriar,
+    .formlogin,
+    .formcriar,
+    .botaoconta {
+        transition: none !important;
+    }
+}
+ 
+ 
+
+ 
+.footer {
+    background-color: #00357a;
+    padding: 90px;
+    margin-top: 60px;
+}
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+ 
+.footer-contato h3{
+    color: #ffd230;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+ 
+.footer-contato p {
+    color: #ffd230;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.footer-icones {
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+    gap: 20px;
+    margin-top: 20px;
+}
+ 
+.footer-icones img {
+    width: 90px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+ 
+.footer-icones img:hover {
+    transform: scale(1.1);
+}
+ 
+.footer-pagamento {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px;
+    gap: 10px;
+}
+ 
+.footer-pagamento img {
+    max-height: 70px;
+    height: 90px;
+    width: 120px;
+}
+ 
+.footer-sobre h3{
+    color: #f9943b;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+ 
+.footer-sobre p {
+    color: #f9943b;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.8;
+    text-align: justify;
+}
