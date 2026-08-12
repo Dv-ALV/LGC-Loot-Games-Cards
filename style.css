@@ -6,7 +6,6 @@ body {
     overflow-x: hidden;
 }
  
-/* ===================== FAIXA ONDULADA DECORATIVA ===================== */
  
 .wrapperonda {
     position: relative;
@@ -29,8 +28,6 @@ main {
     position: relative;
     z-index: 1;
 }
- 
-/* ===================== HEADER DA LANDING PAGE (fixo) ===================== */
  
 .headerlanding {
     display: grid;
@@ -73,13 +70,10 @@ main {
     background-color: #002a61;
     transform: scale(1.05);
 }
- 
-/* espaço reservado no topo pra compensar o header fixo */
 main {
     padding-top: 150px;
 }
  
-/* ===================== HERO ===================== */
  
 .hero {
     display: grid;
@@ -133,7 +127,6 @@ main {
     transform: scale(1.05);
 }
  
-/* ===================== MISSÃO ===================== */
  
 .missao {
     position: relative;
@@ -170,7 +163,6 @@ main {
     object-fit: contain;
 }
  
-/* ===================== BANNER LOOT GAMES E CARDS ===================== */
  
 .bannerloot {
     background-color: #00357a;
@@ -189,7 +181,6 @@ main {
     text-align: center;
 }
  
-/* ===================== PILARES ===================== */
  
 .pilares{
     display: flex;
@@ -256,8 +247,7 @@ main {
 .frete { color: #00357a; }
 .contato { color: #ffd230; }
 .local { color: #f9943b; }
- 
-/* ===================== COMPRE JÁ ===================== */
+
  
 .compreja {
     display: grid;
@@ -328,7 +318,6 @@ main {
 }
  
  
-/* ===================== FOOTER (igual às outras páginas) ===================== */
  
 .footer {
     background-color: #00357a;
