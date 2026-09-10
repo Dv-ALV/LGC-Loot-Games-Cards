@@ -390,3 +390,40 @@ main {
     line-height: 1.8;
     text-align: justify;
 }
+
+#btn-tema {
+    display: grid;
+    grid-column: 2;
+    justify-self: end;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #00357a;
+    color: #00357a;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #121212; 
+}
+
+body.dark-mode .headerlanding {
+    background-color: #1a1a1a; 
+}
+
+body.dark-mode #btn-tema {
+    border-color: #ffd230;
+    color: #ffd230;
+}
+
+body.dark-mode .produto {
+    border-color: #333;
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .preco {
+    color: #ffffff; 
+}
